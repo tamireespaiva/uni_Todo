@@ -1,0 +1,102 @@
+.HeaderWrapper h1,.HeaderWrapperLight h1 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    background-image: linear-gradient(to right, #16B660 69%,  #009467 31%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.HeaderWrapper {
+    position: relative;
+    display: flex;
+    height: 200px;
+    background: #0D0D0D;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.HeaderWrapperLight {
+    position: relative;
+    display: flex;
+    height: 200px;
+    background: #D9D9D9;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.HeaderWrapper__Searchbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    position: absolute;
+    bottom: -35px;
+    max-height: 54px;
+}
+
+.Searchbox__Input,.Searchbox__Input__light {
+    width: 41.806%;
+    padding: 16px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #808080;
+    outline: none;
+    border-radius: 8px;
+    border: 0.5px solid #0D0D0D;
+    background: #262626;
+}
+
+.Searchbox__Button {
+    flex-direction: row-reverse;
+    display: flex;
+    background: #029A48;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    max-height: 54px;
+    align-items: center;
+    color: #F2F2F2;
+}
+
+.Searchbox__Icon {
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.HeaderWrapper__Tema {
+    right: 0;
+    position: absolute;
+    top: 0;
+    padding-top: 41px;
+    padding-right: 49px;
+    background: transparent;
+    border: 0;
+    outline: 0 !important;
+    cursor: pointer;
+}
+.HeaderWrapper__Tema  img{
+    width: 35px;
+    height: 35px;
+}
+/* light*/
+
+.Searchbox__Input__light{
+    border: 0.5px solid #D9D9D9;
+    background: #F2F2F2;
+}

@@ -1,0 +1,16 @@
+html {
+    font-family: Inter, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.dark{
+            color-scheme: light dark;
+            color: rgba(255, 255, 255, 0.87);
+            background: #242424;
+            height: 100%;
+}
+.light{
+    color-scheme: light;
+    background-color: #fff;
+    color: #333;
+}

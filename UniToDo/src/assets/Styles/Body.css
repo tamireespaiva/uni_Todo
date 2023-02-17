@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Tarefascount__Criadas {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #16B660;
+}
+
+.Tarefascount__Criar, .Tarefascount__Concluir {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #16B660;
+    align-items: center;
+}
+
+
+.Tarefascount__CriadasContador {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    background: #333333;
+    color: #D9D9D9;
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    width: 10px;
+}
+
+.Tarefascount__Concluidas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.Tarefascount__ConcluidasContador,.Tarefascount__ConcluidasContador__light {
+    font-family: 'Inter', sans-serif;
+    background: #333333;
+    color: #D9D9D9;
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.Tarefascount__Wrapper {
+    display: flex;
+    padding: 92px 100px 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Tarefascount__Tab {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.Tarefascount__Concluir, .Tarefascount__Criar {
+    display: flex;
+    gap: 8px;
+}
+
+
+
+.empty {
+    border-top: 1px solid #808080;
+    border-radius: 8px;
+}
+
+.TaskVazia {
+    width: 100%;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.TaskVazia  {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    color: #808080;
+}
+.TaskVazia h3 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.TasksPreencher {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.TaskParaPreencher, .dragging {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    border: 1px solid #333333;
+    height: 42px;
+    padding: 16px;
+    background: #262626;
+    align-items: flex-start;
+    gap: 12px;
+}
+.dragging{
+    opacity: 100;
+}
+.Texto,.Texto_light ,.Label {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: transparent;
+    outline: 0;
+}
+
+.Texto,.Texto_light {
+    resize: none;
+    color: #F2F2F2;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+.tarefacompleta{
+    text-decoration-line: line-through;
+    color: #808080;
+}
+
+.RadioButton {
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    background: transparent;
+    border: 0;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.TaskPPreencher {
+    height: 57.15%;
+    width: 5.37%;
+    position: relative;
+}
+
+.FakeButton {
+    width: 88.9%;
+    height: 88.9%;
+    border: 1px solid #16B660;
+    border-radius: 24px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    min-width: 22px;
+    min-height: 22px;
+}
+
+.LabelFakeButton {
+    position: absolute;
+}
+
+.RadioButton:checked ~  .Completed {
+    background: #16B660;
+}
+
+.RadioButton:checked ~ .Completed::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 10px;
+    height: 10px;
+    background-image: url(../ico/check.svg);
+    background-size: 12px;
+}
+
+.BotaoLixo {
+    background: transparent;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    height: 24px;
+}
+.RadioButton:checked ~  .Texto {
+    color: #16B660;
+}
+
+.Task {
+    width: 60%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+/* light começa aqui */
+
+
+.Tarefascount__CriadasContador__light {
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        background: #D9D9D9;
+        color: #333333;
+        padding: 3px 9px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+        width: 10px;
+}
+
+.Tarefascount__ConcluidasContador__light{
+    background:#D9D9D9;
+    color: #333333;
+}
+
+.TaskParaPreencher__light,
+.dragging__light {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    height: 42px;
+    gap: 12px;
+    padding: 16px;
+    background: #FFFFFF;
+    align-items: flex-start;
+    gap: 12px;
+}
+.Texto_light{
+    color: #333333;
+}
+@media screen and (min-width: 280px) and (max-width: 459px){
+        .Tarefascount__Tab {
+                width: 100%;
+                gap: 12px;
+                max-width: 280px;
+            }
+}
+@media screen and (min-width: 280px) and (max-width: 1024px){
+    .Tarefascount__Wrapper{
+        padding: 46px 16px 16px;
+    }
+    .Tarefascount__ConcluidasContador,.Tarefascount__ConcluidasContador,
+    .Tarefascount__ConcluidasContador__light{
+        white-space: nowrap;
+    }
+    .Tarefascount__Criadas{
+        white-space: nowrap;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .Tarefascount__Criar,
+    .Tarefascount__Concluir{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .HeaderWrapper__Tema{
+        padding-right: 16px;
+    }
+    .HeaderWrapper__Tema img{
+        width: 19px;
+        height: 19px;
+    }
+    .Searchbox__Input,
+    .Searchbox__Input__light,
+    .Searchbox__Input,
+    .Searchbox__Input{
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+
+
+
+
+
